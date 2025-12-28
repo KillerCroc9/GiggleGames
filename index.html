@@ -23,12 +23,15 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2 id="modal-game-title"></h2>
-            <div class="game-placeholder">
-                <p>🎲 Game loading... 🎲</p>
-                <p>This is a placeholder for the game!</p>
-                <p>The actual game will be added here soon!</p>
-                <div class="placeholder-animation">
-                    <div class="bounce">🎯</div>
+            <div id="game-instructions" class="game-instructions"></div>
+            <div id="game-container" class="game-container">
+                <canvas id="game-canvas"></canvas>
+            </div>
+            <div id="game-ui" class="game-ui">
+                <div id="score-display">Score: 0</div>
+                <div id="win-message" class="win-message" style="display: none;">
+                    <h3>🎉 YOU WIN! 🎉</h3>
+                    <button id="play-again-btn">Play Again</button>
                 </div>
             </div>
         </div>
