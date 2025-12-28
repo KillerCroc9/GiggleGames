@@ -227,7 +227,7 @@ class Game3D {
     }
 
     setupControls() {
-        document.addEventListener('keydown', (e) => {
+        this.keyDownHandler = (e) => {
             this.keys[e.key] = true;
             if (e.key === ' ') {
                 if (this.gameData.type === 'jump' && this.player.z === 0) {
@@ -236,11 +236,14 @@ class Game3D {
                     this.shoot();
                 }
             }
-        });
+        };
         
-        document.addEventListener('keyup', (e) => {
+        this.keyUpHandler = (e) => {
             this.keys[e.key] = false;
-        });
+        };
+        
+        document.addEventListener('keydown', this.keyDownHandler);
+        document.addEventListener('keyup', this.keyUpHandler);
     }
 
     shoot() {
@@ -475,9 +478,13 @@ class Game3D {
         if (this.animationId) {
             cancelAnimationFrame(this.animationId);
         }
+        if (this.keyDownHandler) {
+            document.removeEventListener('keydown', this.keyDownHandler);
+        }
+        if (this.keyUpHandler) {
+            document.removeEventListener('keyup', this.keyUpHandler);
+        }
         this.keys = {};
-        document.removeEventListener('keydown', this.keyHandler);
-        document.removeEventListener('keyup', this.keyHandler);
     }
 }
 
