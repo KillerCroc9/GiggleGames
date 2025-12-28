@@ -2,7 +2,7 @@
 const games = [
     { name: "Puzzle Master", icon: "🧩", description: "Solve puzzles!" },
     { name: "Race Car", icon: "🏎️", description: "Speed racing!" },
-    { name: "Space Adventure", icon: "🚀", description: "Explore space!" },
+    { name: "Space Adventure", icon: "🛸", description: "Explore space!" },
     { name: "Dinosaur World", icon: "🦕", description: "Meet dinos!" },
     { name: "Unicorn Magic", icon: "🦄", description: "Magical fun!" },
     { name: "Ocean Quest", icon: "🐠", description: "Dive deep!" },
@@ -80,7 +80,7 @@ const games = [
     { name: "Mushroom Jump", icon: "🍄", description: "Bounce high!" },
     { name: "Carousel Ride", icon: "🎠", description: "Round & round!" },
     { name: "Drum Beat", icon: "🥁", description: "Keep rhythm!" },
-    { name: "Seal Show", icon: "🦭", description: "Clap & play!" },
+    { name: "Seal Show", icon: "🐋", description: "Clap & play!" },
     { name: "Rocket Ship", icon: "🚀", description: "Blast off!" },
     { name: "Bubble Blower", icon: "🫧", description: "Blow bubbles!" },
     { name: "Palm Tree", icon: "🌴", description: "Island fun!" },
@@ -97,7 +97,7 @@ const games = [
     { name: "Pumpkin Patch", icon: "🎃", description: "Pick pumpkins!" },
     { name: "Whale Watch", icon: "🐋", description: "See whales!" },
     { name: "Hedgehog Roll", icon: "🦔", description: "Roll around!" },
-    { name: "Trophy Case", icon: "🏆", description: "Collect all!" }
+    { name: "Trophy Case", icon: "🏅", description: "Collect all!" }
 ];
 
 // Generate game cards
