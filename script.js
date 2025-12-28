@@ -66,7 +66,7 @@ const games = [
     { name: "Watermelon Slice", icon: "🍉", description: "Slice fruit!" },
     { name: "Ladybug Spot", icon: "🐞", description: "Count spots!" },
     { name: "Peacock Pride", icon: "🦚", description: "Show colors!" },
-    { name: "Hot Air Balloon", icon: "🎈", description: "Float up!" },
+    { name: "Hot Air Balloon", icon: "☁️", description: "Float up!" },
     { name: "Campfire Night", icon: "🔥", description: "Roast s'mores!" },
     { name: "Treasure Map", icon: "🗺️", description: "Follow map!" },
     { name: "Ferris Wheel", icon: "🎡", description: "Ride high!" },
